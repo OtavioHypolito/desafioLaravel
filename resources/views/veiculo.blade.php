@@ -10,7 +10,7 @@
                 <form class="" action="/veiculo" method="POST">
                     <div class="row">
                         <div class="form-group col-8">
-                            
+
                         </div>
                         <div class="form-group col-8">
                             <div class="form-group col-10">
@@ -53,9 +53,9 @@
                             </br> </br> </br>
                             <input type="hidden" id="id" name="id" value="{{ $veiculo->id }}" />
 
-                            <a href="/home" class="btn btn-warning">Voltar</a>
-                            <a href="/veiculo" class="btn btn-primary">Limpar</a>
-                            <button type="submit" class="btn btn-success">Salvar</button>
+                            <a href="/home" class="btn btn-outline-warning">Voltar</a>
+                            <a href="/veiculo" class="btn btn-outline-primary">Limpar</a>
+                            <button type="submit" class="btn btn-outline-success">Salvar</button>
 
                         </div>
 
@@ -64,7 +64,5 @@
             </div>
         </div>
     </div>
-
-
 </div>
 @endsection

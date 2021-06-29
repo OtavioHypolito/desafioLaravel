@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\CaminhaoController;
-use App\Http\Controllers\CarroController;
-use App\Http\Controllers\MotoController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\VeiculoController;
 use Illuminate\Support\Facades\Route;
@@ -23,13 +20,11 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('');
-
-Route::resources([
-    "carro" => CarroController::class
-]);
 
 Route::resources([
     "welcome" => WelcomeController::class
@@ -38,3 +33,5 @@ Route::resources([
 Route::resources([
     "veiculo" => VeiculoController::class
 ]);
+
+Route::redirect('/logout', "/welcome");

@@ -48,8 +48,8 @@
                 </div>
             @endif
             
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="nav justify-content-end col-12" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Filtro
                 </button>
                 <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">

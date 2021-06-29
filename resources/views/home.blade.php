@@ -8,18 +8,45 @@
                 <div class="card-header">Cadastro de Veiculos</div>
 
                 <div class="row">
-                    <div class="form-group col-4">
+                    <div class="form-group col-12">
                         </br>
-                        <a class="dropdown-item" href="{{ url('/veiculo') }}">Veiculo</a>
-
-                        <a class="dropdown-item" href="{{ url('/carro') }}">Carro</a>
-                        <a class="dropdown-item" href="{{ url('/caminhao') }}">Caminhão</a>
-                        <a class="dropdown-item" href="{{ url('/moto') }}">Moto</a>
-
+                        <a class="btn btn-outline-primary btn-lg btn-block" href="{{ url('/veiculo') }}">Clique aqui para cadastrar</a>
                     </div>
+                    
+                    
+                </div>
+
+                <div class="col-sm col-form-label text-md-center">
+                </br> </br>
+                    <table class="table table-striped">
+                    <thead>
+                            <tr>
+                                
+                                <th>Tipo de Veiculo</th>
+                                <th>Marca</th>
+                                <th>Dica</th>
+                                
+                            </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($veiculos as $veiculo) 
+                                <tr>  
+                                    <td>{{  $veiculo->tipo }}</td>  
+                                    <td>{{  $veiculo->marca }}</td>
+                                    <td>{{  $veiculo->dica }}</td>
+                                </tr>
+
+                        @endforeach
+
+                
+                    </tbody>
 
                 </div>
+
             </div>
         </div>
     </div>
-    @endsection
+
+
+</div>
+@endsection
